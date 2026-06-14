@@ -1,6 +1,4 @@
-# reinstall
-
-## 介绍
+# 介绍
 
 - 一键重装到 Linux，支持 19 种常见发行版
 - 一键重装到 Windows，使用官方原版 ISO 而非自制镜像，脚本支持自动查找 ISO 链接、自动安装 `VirtIO` 等公有云驱动
@@ -11,7 +9,7 @@
 - 支持 BIOS、EFI 引导，支持 ARM 服务器
 - 不含自制包，所有资源均实时从镜像源获得
 
-## 系统要求
+# 系统要求
 
 原系统可以是表格中的任意系统
 
@@ -43,13 +41,13 @@
 
 ^ 表示需要 256 MB 内存 + 1.5 GB 硬盘，或 512 MB 内存 + 1 GB 硬盘
 
-## 下载（当前系统是 <img width="20" height="20" src="https://www.kernel.org/theme/images/logos/favicon.png" /> Linux）
+# 下载（当前系统是 <img width="20" height="20" src="https://www.kernel.org/theme/images/logos/favicon.png" /> Linux）
 
 ```bash
 curl -O https://raw.githubusercontent.com/AligashChen/ServerScript/main/reinstall.sh || wget -O ${_##*/} $_
 ```
 
-## 安装
+# 安装
 
 > [!CAUTION]
 >
@@ -88,7 +86,7 @@ bash reinstall.sh anolis      7|8|23
                   redhat      --img="http://access.cdn.redhat.com/xxx.qcow2"
 ```
 
-### 可选参数
+## 可选参数
 
 - `--username USERNAME` 设置用户名
 - `--password PASSWORD` 设置密码
@@ -99,13 +97,13 @@ bash reinstall.sh anolis      7|8|23
 - `--hold 1` 仅重启到安装环境，不运行安装，用于 SSH 登录验证网络连通性
 - `--hold 2` 安装结束后不重启，用于 SSH 登录修改系统内容，Debian/Kali 会挂载在 `/target`，其它系统会挂载在 `/os`
 
-### 安装命令示例
+## 安装命令示例
 
 ```bash
 bash reinstall.sh <填自己要安装的系统版本号> --username root --password <填自己服务器root用户登录密码> --ssh-port 22
 ```
 
-## 取消重装
+# 取消重装
 
 - 如果不小心运行了脚本，可以运行以下命令取消重装
 - 需要在重启前运行
@@ -114,13 +112,13 @@ bash reinstall.sh <填自己要安装的系统版本号> --username root --passw
 bash reinstall.sh reset
 ```
 
-## 说明
+# 说明
 
 - 特别感谢原作者：[bin456789](https://github.com/bin456789)
 - 脚本可以跑在云服务器上，也可以跑在自己本地内网实体服务器上（前提是：本地内网实体服务器需要能够联网）
 - 亲测x86架构可以完美运行，ARM架构机器没跑过
 
-## 感谢
+# 感谢
 
 感谢以下商家提供白嫖机器
 
