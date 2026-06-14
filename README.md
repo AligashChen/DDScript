@@ -50,8 +50,6 @@ curl -O https://githubadd01.19950628.xyz/https://raw.githubusercontent.com/Aliga
 > [!CAUTION]
 >
 > 此功能会清除当前系统**整个硬盘**的全部数据（包含其它分区）！
->
-> 如果不小心运行了脚本，可以在重启前运行 `bash reinstall.sh reset` 取消重装
 
 - 脚本会提示输入用户名和密码，不输入则使用 `root` 和随机密码
 - 不输入版本号则安装最新版
